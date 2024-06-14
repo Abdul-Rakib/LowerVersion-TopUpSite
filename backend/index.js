@@ -82,7 +82,7 @@ app.get("/protected", authCheck, checkScopes, (req, res) => {
   res.send("Protected");
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 const insertData = async () => {
   let dataInserted = false;
